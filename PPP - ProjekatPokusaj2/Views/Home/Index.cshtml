@@ -1,29 +1,69 @@
 ﻿@model IEnumerable<PPP___ProjekatPokusaj2.Core.KorisnickiNalogBO>
 
+
 @{
     ViewData["Title"] = "Home Page";
 }
+<style>
+    body{
+        
+    }
+    .containerr{
+        display:flex;
+        justify-content:left;
+        align-items:left;
+        margin-left:-60px;
+        padding:20px;
+        background-color:grey;
+    }
+    .okvir{
+        border:solid;
+        border-radius:5px;
+        padding:20px;
+        background-color:whitesmoke;
+        column:1;
+        flex-basis:50%;
+    }
 
-
+   
+</style>
+<body>
 <form>
-<button asp-action="Index" asp-controller="Home" class="btn btn-primary mb-3">Create Nalog</button> 
+   
+    <div class="containerr">
+        <div class="okvir">
+
+       
+        <h3>Aktivni korisnici</h3>
 <table class="table table-responsive table-bordered table-hover text-center">
      <tbody>
         @if (Model != null & Model.Any())
         {
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@item.Id</td>
-                    <td>@item.Ime</td>
-                    <td>@item.Prezime</td>
-                    <td>@item.Username</td>
-                    <td>@item.Kontakt</td>
-                    <td>@item.Aktivnost</td>
-                </tr>
-            }
+           @foreach (var item in Model)
+{
+    @if (item.Aktivnost == true)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Ime</td>
+            <td>@item.Prezime</td>
+            <td>@item.Username</td>
+            <td>@item.Kontakt</td>
+            <td>@item.Aktivnost</td>
+            <td>
+                <div class="btn-group btn-group-sm">
+                    <a asp-controller="Home" asp-action="Start" asp-route-id="@item.Id" class="btn btn-primary">Zapocni Voznju</a>
+                </div>
+            </td>
+        </tr>
+    }
+}
+
 
         }
           </tbody>
 </table>
+ </div>
+</div>
 </form>
+</body>

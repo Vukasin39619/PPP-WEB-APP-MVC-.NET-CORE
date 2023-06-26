@@ -22,6 +22,7 @@ namespace PPP___ProjekatPokusaj2.Infrastructure.Implementations
             await _context.KorisnickiNalog.AddAsync(model);
             await _context.SaveChangesAsync();
         }
+       
 
         public async Task Delete(int id)
         {
@@ -43,6 +44,7 @@ namespace PPP___ProjekatPokusaj2.Infrastructure.Implementations
             var nalog = await _context.KorisnickiNalog.ToListAsync();
             return nalog;
         }
+      
 
         public async Task<KorisnickiNalogBO> GetById(int id)
         {
