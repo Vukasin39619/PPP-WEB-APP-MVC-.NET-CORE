@@ -1,0 +1,85 @@
+﻿@model PPP___ProjekatPokusaj2.Core.KorisnickiNalogBO
+
+
+
+@{
+    ViewData["Title"] = Model != null && Model.Id == 0 ? "Napravi nalog" : "Edituj nalog";
+}
+
+<form method="post" action="CreateOrEdit">
+    <div class="card">
+        <div class="card-header bg-info align-content-center">
+            <h2 class="text-center">@ViewData["Title"]</h2>
+        </div>
+        <div class="card-body">
+            <input type="hidden" asp-for="Id" />
+            <div class="form-floating mb-2">
+                <input asp-for="Ime" class="form-control" />
+                <label asp-for="Ime"></label>
+                <span asp-validation-for="Ime" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-2">
+                <input asp-for="Prezime" class="form-control" />
+                <label asp-for="Prezime"></label>
+                <span asp-validation-for="Prezime" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-2">
+                <input asp-for="Username" class="form-control" />
+                <label asp-for="Username"></label>
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-2">
+                <input asp-for="Sifra" type="password" class="form-control" />
+                <label asp-for="Sifra"></label>
+                <span asp-validation-for="Sifra" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-2">
+                <input asp-for="Kontakt"  class="form-control" />
+                <label asp-for="Kontakt"></label>
+                <span asp-validation-for="Kontakt" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-2">
+    <label asp-for="Aktivnost"></label><br /><br />
+    <input name="radio" id="radio" type="radio" value="True" onclick="setAktivnostValue()" @(Model.Aktivnost ? "checked" : "")/>True
+    <input name="radio"id="radio2" type="radio" value="False" onclick="setAktivnostValue()" @(Model.Aktivnost ? "" : "checked")/>False
+    <input asp-for="Aktivnost" type="hidden" id="aktivnostHidden" />
+
+    <span asp-validation-for="Aktivnost" class="text-danger"></span>
+</div>
+
+        </div>
+        @if(Model != null && Model.Id==0)
+        {
+            <div class="col-lg-12 d-grid">
+            <button type="submit" class="btn btn-primary">Create</button>
+            </div>
+        }
+        else
+        {
+            <div class="col-lg-12 d-grid">
+            <button type="submit" class="btn btn-success">Edit</button>
+            </div>
+        }
+    </div>
+</form>
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<script>
+    function setAktivnostValue(value) {
+        var radiotrue = document.getElementById("radio")
+        var radiofalse = document.getElementById("radio2")
+        if(radiotrue.checked)
+        {
+            document.getElementById("aktivnostHidden").value = "True";
+        }
+        else if(radiofalse.checked)
+        {
+          document.getElementById("aktivnostHidden").value = "false";
+
+        }
+        
+    }
+</script>

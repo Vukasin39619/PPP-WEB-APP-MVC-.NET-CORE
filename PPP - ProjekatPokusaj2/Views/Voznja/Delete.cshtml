@@ -1,0 +1,36 @@
+﻿@model PPP___ProjekatPokusaj2.Core.VoznjaBO
+
+    @{
+        ViewData["Title"] = "Obrisi Voznju";
+    }
+
+    <form method="post" action="Delete">
+        <div class="card">
+            <div class="card-header bg-info">
+                <h2 class="text-center">@ViewData["Title"]</h2>
+            </div>
+        </div>
+         <div class="card-body">
+            <input type="hidden" asp-for="Id_voznje" />
+            <div class="form-floating mb-2">
+                <input asp-for="Id_ulice" class="form-control"readonly />
+                <label asp-for="Id_ulice"></label>
+                <span asp-validation-for="Id_ulice" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-2">
+                <input asp-for="Id" class="form-control" readonly/>
+                <label asp-for="Id"></label>
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-2">
+                <input asp-for="VremeVoznjeMin" class="form-control"readonly />
+                <label asp-for="VremeVoznjeMin"></label>
+                <span asp-validation-for="VremeVoznjeMin" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-lg-12 d-grid">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+</div>
+</form>

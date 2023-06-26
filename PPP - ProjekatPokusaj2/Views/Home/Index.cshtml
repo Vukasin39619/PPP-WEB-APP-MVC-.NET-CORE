@@ -1,0 +1,29 @@
+﻿@model IEnumerable<PPP___ProjekatPokusaj2.Core.KorisnickiNalogBO>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<form>
+<button asp-action="Index" asp-controller="Home" class="btn btn-primary mb-3">Create Nalog</button> 
+<table class="table table-responsive table-bordered table-hover text-center">
+     <tbody>
+        @if (Model != null & Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Ime</td>
+                    <td>@item.Prezime</td>
+                    <td>@item.Username</td>
+                    <td>@item.Kontakt</td>
+                    <td>@item.Aktivnost</td>
+                </tr>
+            }
+
+        }
+          </tbody>
+</table>
+</form>

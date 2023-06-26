@@ -1,0 +1,39 @@
+﻿@model PPP___ProjekatPokusaj2.Core.UlicaBO
+
+
+@{
+    ViewData["Title"] = Model != null && Model.Id_ulice == 0 ? "Napravi ulicu" : "Edituj ulicu";
+}
+
+<form method="post" action="CreateOrEdit">
+    <div class="card">
+        <div class="card-header bg-info align-content-center">
+            <h2 class="text-center">@ViewData["Title"]</h2>
+        </div>
+        <div class="card-body">
+            <input type="hidden" asp-for="Id_ulice" />
+            <div class="form-floating mb-2">
+                <input asp-for="Nazivulice" class="form-control" />
+                <label asp-for="Nazivulice"></label>
+                <span asp-validation-for="Nazivulice" class="text-danger"></span>
+            </div>
+        </div>
+        @if(Model != null && Model.Id_ulice==0)
+        {
+            <div class="col-lg-12 d-grid">
+            <button type="submit" class="btn btn-primary">Create</button>
+            </div>
+        }
+        else
+        {
+            <div class="col-lg-12 d-grid">
+            <button type="submit" class="btn btn-success">Edit</button>
+            </div>
+        }
+    </div>
+</form>
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

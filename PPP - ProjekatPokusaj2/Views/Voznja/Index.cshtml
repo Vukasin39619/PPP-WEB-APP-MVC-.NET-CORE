@@ -1,0 +1,97 @@
+﻿@model IEnumerable<PPP___ProjekatPokusaj2.Core.VoznjaBO>
+
+
+    @{
+        ViewData["Title"] = "Lista Voznji";
+    }
+
+    <style>
+        
+    </style>
+
+
+<h3>@ViewData["Title"]</h3>
+<hr/>
+<style>
+    .kontejnercic{
+       display:flex;
+         
+    }
+    .edit{
+        border-right: solid grey;
+        border-width: 1px;
+        column:1;
+        flex-basis:50%
+
+    }
+    .delete{
+        column:2;
+        flex-basis:50%
+    }
+</style>
+<form>
+<button asp-action="CreateOrEdit" asp-controller="Voznja" class="btn btn-primary mb-3">Create Voznja</button> 
+<table class="table table-responsive table-bordered table-hover text-center">
+    <thead>
+        <tr class="table-active">
+            <th>
+                @Html.DisplayNameFor(model => model.Id_voznje)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id_ulice)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.VremeVoznjeMin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th colspan=2>
+                Opcije
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model != null & Model.Any())
+        {
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.Id_voznje</td>
+                    <td>@item.Id_ulice</td>
+                    <td>@item.VremeVoznjeMin</td>
+                    <td>@item.Id</td>
+
+                    <td class="text-center">
+                        <div class="kontejnercic">
+                        <div class="edit">
+                        <div class="btn-group btn-group-sm">
+                            <a asp-controller="Voznja" asp-action="CreateOrEdit" asp-route-id="@item.Id_voznje" class="btn btn-warning">Edit</a>
+                        </div>
+                        </div>
+                        <div class="delete">
+                        <div class="btn-group btn-group-sm delete">
+                            <a asp-controller="Voznja" asp-action="Delete" asp-route-id="@item.Id_voznje" class="btn btn-danger">Delete</a>
+                        </div>
+                        </div>
+                        </div>
+                    </td>
+                     
+
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6">
+                    <div>
+                        Nema Voznji Unesenih
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</form>

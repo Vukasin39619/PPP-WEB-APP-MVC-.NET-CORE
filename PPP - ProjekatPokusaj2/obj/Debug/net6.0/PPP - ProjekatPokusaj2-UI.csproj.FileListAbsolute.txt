@@ -1,0 +1,78 @@
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\appsettings.json
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\PPP - ProjekatPokusaj2-UI.staticwebassets.runtime.json
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\PPP - ProjekatPokusaj2-UI.exe
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\PPP - ProjekatPokusaj2-UI.deps.json
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\PPP - ProjekatPokusaj2-UI.runtimeconfig.json
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\PPP - ProjekatPokusaj2-UI.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\PPP - ProjekatPokusaj2-UI.pdb
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\PPP - ProjekatPokusaj2.Core.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\PPP - ProjekatPokusaj2.Infrastructure.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\PPP - ProjekatPokusaj2.Infrastructure.pdb
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\bin\Debug\net6.0\PPP - ProjekatPokusaj2.Core.pdb
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\PPP - ProjekatPokusaj2-UI.csproj.AssemblyReference.cache
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\PPP - ProjekatPokusaj2-UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\PPP - ProjekatPokusaj2-UI.AssemblyInfoInputs.cache
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\PPP - ProjekatPokusaj2-UI.AssemblyInfo.cs
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\PPP - ProjekatPokusaj2-UI.csproj.CoreCompileInputs.cache
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\PPP - ProjekatPokusaj2-UI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\PPP - ProjekatPokusaj2-UI.RazorAssemblyInfo.cache
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\PPP - ProjekatPokusaj2-UI.RazorAssemblyInfo.cs
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\scopedcss\bundle\PPP - ProjekatPokusaj2-UI.styles.css
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\scopedcss\projectbundle\PPP - ProjekatPokusaj2-UI.bundle.scp.css
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\PPP - ProjekatPokusaj2-UI.csproj.CopyComplete
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\PPP - ProjekatPokusaj2-UI.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\refint\PPP - ProjekatPokusaj2-UI.dll
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\PPP - ProjekatPokusaj2-UI.pdb
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\PPP - ProjekatPokusaj2-UI.genruntimeconfig.cache
+C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2\obj\Debug\net6.0\ref\PPP - ProjekatPokusaj2-UI.dll
