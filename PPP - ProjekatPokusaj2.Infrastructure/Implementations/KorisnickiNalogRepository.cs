@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PPP___ProjekatPokusaj2.Core;
 using PPP___ProjekatPokusaj2.Infrastructure.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PPP___ProjekatPokusaj2.Infrastructure.Implementations
 {
