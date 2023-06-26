@@ -14,5 +14,7 @@ namespace PPP___ProjekatPokusaj2.Infrastructure.Interface
         Task Add(KorisnickiNalogBO model);
         Task Update(KorisnickiNalogBO model);
         Task Delete(int id);
+        public Task<KorisnickiNalogBO> GetByUsernameAndPassword(string username, string password);
+
     }
 }

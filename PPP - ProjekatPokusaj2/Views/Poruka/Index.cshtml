@@ -1,0 +1,32 @@
+﻿@model List<String>
+
+<h1>Poruka</h1>
+
+@if (Model.Count == 0)
+{
+    <p>No messages.</p>
+}
+else
+{
+    <ul>
+        @foreach (var message in Model)
+        {
+            <li>@message</li>
+        }
+    </ul>
+}
+
+<hr />
+
+<h2>Add Message</h2>
+
+<form method="post" action="/Poruka/AddMessage">
+    <div class="form-group">
+        <input type="text" name="message" class="form-control" style="margin-top:5px;" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+<form method="post" asp-action="ClearMessages">
+    <button type="submit" class="btn btn-danger" style="margin-top:5px;">Clear Messages</button>
+</form>

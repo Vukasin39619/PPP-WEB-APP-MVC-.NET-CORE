@@ -1,0 +1,15 @@
+﻿@model IEnumerable<PPP___ProjekatPokusaj2.Core.UlicaBO>
+
+@if (Model != null && Model.Any())
+{
+    <div class="form-floating mb-2">
+        <select name="selectedUlicaId" class="form-control">
+            <option value="">Select Street</option>
+            @foreach (var ulica in Model)
+            {
+                <option value="@ulica.Id_ulice">@ulica.Nazivulice</option>
+            }
+        </select>
+        <label>Select Street</label>
+    </div>
+}

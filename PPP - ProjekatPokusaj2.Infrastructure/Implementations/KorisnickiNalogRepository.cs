@@ -17,6 +17,11 @@ namespace PPP___ProjekatPokusaj2.Infrastructure.Implementations
         {
             _context = context;
         }
+        public async Task<KorisnickiNalogBO> GetByUsernameAndPassword(string username, string password)
+        {
+            return await _context.KorisnickiNalog.FirstOrDefaultAsync(n => n.Username == username && n.Sifra == password);
+        }
+
         public async Task Add(KorisnickiNalogBO model)
         {
             await _context.KorisnickiNalog.AddAsync(model);

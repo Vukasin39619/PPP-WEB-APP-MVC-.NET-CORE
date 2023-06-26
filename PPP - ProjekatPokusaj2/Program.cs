@@ -7,9 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSession(); // Add this line for session management
 
 builder.Services.AddDbContext<MyAppDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IUlicaRepository, UlicaRepository>();
 builder.Services.AddScoped<IVoznjaRepository, VoznjaRepository>();
@@ -32,8 +33,10 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+app.UseSession(); // Add this line for session middleware
+
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Login}/{action=Index}/{id?}");
 
 app.Run();

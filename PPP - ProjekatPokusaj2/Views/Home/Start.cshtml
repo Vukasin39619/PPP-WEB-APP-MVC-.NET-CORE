@@ -1,50 +1,120 @@
 ﻿@model PPP___ProjekatPokusaj2.Core.KorisnickiNalogBO
 
-    @{
-        ViewData["Title"] = "Zapocni voznju";
-    }
-    
-    <form method="post" action="Start">
-        <div class="card">
-            <div class="card-header bg-info">
-                <h2 class="text-center">@ViewData["Title"]</h2>
-            </div>
+@{
+    ViewData["Title"] = "Zapocni voznju";
+}
+
+<form method="post" action="Start">
+    <div class="card">
+        <div class="card-header bg-info">
+            <h2 class="text-center">@ViewData["Title"]</h2>
         </div>
-         <div class="card-body">
-            <input type="hidden" asp-for="Id" />
+    </div>
+    <div class="card-body">
+        <input type="hidden" asp-for="Id" />
         <table>
-            <td colspan="4">
-              <tr><h4 style="text-align:center;">Taksista:</h4></tr>
-            </td>
-            <td>
-                <tr><div class="form-floating mb-2">
-                <input asp-for="Ime" class="form-control" readonly />
-                <label asp-for="Ime"></label>
-               <span asp-validation-for="Ime" class="text-danger"></span>
-               </tr> </div><tr>
-            <div class="form-floating mb-2">
-                <input asp-for="Prezime" class="form-control" readonly />
-                <label asp-for="Prezime"></label>
-                <span asp-validation-for="Prezime" class="text-danger"></span>
-
-            </div></tr>
-                <tr> <div class="form-floating mb-2">
-                <input asp-for="Username" class="form-control" readonly />
-                <label asp-for="Username"></label>
-                 <span asp-validation-for="Username" class="text-danger"></span>
-
-            </div></tr>
-                <tr> <div class="form-floating mb-2">
-                <input asp-for="Kontakt" class="form-control" readonly />
-                <label asp-for="Kontakt"></label>
-                <span asp-validation-for="Ime" class="text-danger"></span>
-            </div></tr>
-            </td>
+            <tr>
+                <td colspan="4">
+                    <h4 style="text-align:center;">Taksista:</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-floating mb-2">
+                        <input asp-for="Ime" class="form-control" readonly />
+                        <label asp-for="Ime"></label>
+                        <span asp-validation-for="Ime" class="text-danger"></span>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-floating mb-2">
+                        <input asp-for="Prezime" class="form-control" readonly />
+                        <label asp-for="Prezime"></label>
+                        <span asp-validation-for="Prezime" class="text-danger"></span>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-floating mb-2">
+                        <input asp-for="Username" class="form-control" readonly />
+                        <label asp-for="Username"></label>
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-floating mb-2">
+                        <input asp-for="Kontakt" class="form-control" readonly />
+                        <label asp-for="Kontakt"></label>
+                        <span asp-validation-for="Ime" class="text-danger"></span>
+                    </div>
+                </td>
+            </tr>
         </table>
-         <div>
-                <div class="col-lg-12 d-grid">
-                    <button type="submit" class="btn btn-primary">Zapocni</button>
-                </div>
-            </div>
+
+        @Html.Partial("_SelectStreet", ViewBag.UlicaData as IEnumerable<PPP___ProjekatPokusaj2.Core.UlicaBO>) <!-- Cast the ViewBag.UlicaData to the correct type -->
+            
+
+<div id="ulicaList">
+    @foreach (var ulica in ViewBag.UlicaData)
+    {
+        <div class="ulicaItem">
+            <input type="hidden" name="selectedUlicaId" value="@ulica.Id_ulice" />
+            <span>@ulica.Nazivulice</span>
+        </div>
+    }
 </div>
+
+        <div class="col-lg-12 d-grid">
+            <button type="submit" class="btn btn-primary">Zapocni</button>
+        </div>
+    </div>
 </form>
+<script>
+    $(document).ready(function () {
+        // Filter the street list based on the search input
+        $('#searchUlica').on('input', function () {
+            var searchTerm = $(this).val().toLowerCase();
+            $('.ulicaItem').each(function () {
+                var ulicaName = $(this).text().toLowerCase();
+                if (ulicaName.includes(searchTerm)) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+
+        // Handle the street selection
+        $('.ulicaItem').click(function () {
+            $(this).addClass('selected');
+            $(this).siblings().removeClass('selected');
+        });
+
+        // Handle the form submission
+        $('form').submit(function (event) {
+            event.preventDefault();
+
+            var selectedUlicaId = $('.ulicaItem.selected input[name="selectedUlicaId"]').val();
+
+            // Perform validation on the selected street
+            if (!selectedUlicaId) {
+                alert('Please select a street.');
+                return;
+            }
+
+            // Make the "Voznja" request
+            $.ajax({
+                url: '/HomeController/CreateVoznja',
+                type: 'POST',
+                data: { selectedUlicaId: selectedUlicaId },
+                success: function () {
+                    alert('Voznja successfully created.');
+                    // Redirect to the desired page after successful submission
+                    window.location.href = '/HomeController/Index';
+                },
+                error: function () {
+                    alert('Error creating Voznja.');
+                }
+            });
+        });
+    });
+</script>

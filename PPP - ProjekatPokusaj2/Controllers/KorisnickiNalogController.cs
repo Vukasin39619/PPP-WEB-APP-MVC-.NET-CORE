@@ -12,7 +12,7 @@ namespace PPP___ProjekatPokusaj2.Controllers
         {
             _nalogRepo = nalogRepo;
         }
-
+        
         public async Task<IActionResult> Index()
         {
             var nalog = await _nalogRepo.GetAll();

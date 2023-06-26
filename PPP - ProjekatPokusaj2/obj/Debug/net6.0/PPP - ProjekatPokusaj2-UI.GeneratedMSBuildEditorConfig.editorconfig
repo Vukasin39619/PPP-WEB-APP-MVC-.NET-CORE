@@ -27,6 +27,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Vukisha/source/repos/PPP - ProjekatPokusaj2/PPP - ProjekatPokusaj2/Views/Home/_SelectStreet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfU2VsZWN0U3RyZWV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Vukisha/source/repos/PPP - ProjekatPokusaj2/PPP - ProjekatPokusaj2/Views/KorisnickiNalog/CreateOrEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWNraU5hbG9nXENyZWF0ZU9yRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -37,6 +41,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Vukisha/source/repos/PPP - ProjekatPokusaj2/PPP - ProjekatPokusaj2/Views/KorisnickiNalog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29yaXNuaWNraU5hbG9nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Vukisha/source/repos/PPP - ProjekatPokusaj2/PPP - ProjekatPokusaj2/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Vukisha/source/repos/PPP - ProjekatPokusaj2/PPP - ProjekatPokusaj2/Views/Poruka/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydWthXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Vukisha/source/repos/PPP - ProjekatPokusaj2/PPP - ProjekatPokusaj2/Views/Shared/Error.cshtml]
