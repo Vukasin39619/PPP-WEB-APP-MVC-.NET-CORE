@@ -3,13 +3,15 @@ using PPP___ProjekatPokusaj2.Core;
 using PPP___ProjekatPokusaj2.Infrastructure.Interface;
 using System.Linq;
 using System.Threading.Tasks;
-
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 namespace PPP___ProjekatPokusaj2.Controllers
 {
     public class LoginController : Controller
     {
         private readonly IKorisnickiNalogRepository _nalogRepository;
-
+        
         public LoginController(IKorisnickiNalogRepository nalogRepository)
         {
             _nalogRepository = nalogRepository;
@@ -17,35 +19,51 @@ namespace PPP___ProjekatPokusaj2.Controllers
 
         public IActionResult Index()
         {
+            ClaimsPrincipal claimuser = HttpContext.User;
+            if (claimuser.Identity.IsAuthenticated)
+                return RedirectToAction("Index", "Home");
+
+            
+
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> Index(Login modelLogin)
+        {
+            var nalog = await _nalogRepository.GetAll();
+            if (modelLogin.Username == "Admin" && modelLogin.Password == "Admin")
+            {
+                List<Claim> claims = new List<Claim>()
+                {
+                    new Claim(ClaimTypes.NameIdentifier, modelLogin.Username),
+
+                };
+                ClaimsIdentity claimsIdentity =
+                    new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+                AuthenticationProperties properties = new AuthenticationProperties()
+                {
+                    AllowRefresh = true,
+
+                };
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                    new ClaimsPrincipal(claimsIdentity), properties);
+
+                return RedirectToAction("Index", "Home");
+
+            }
+            foreach(KorisnickiNalogBO nalozi in nalog)
+            {
+                if(modelLogin.Username==nalozi.Username && modelLogin.Password==nalozi.Sifra)
+                {
+                    return RedirectToAction("Index", "Voznja");
+                }
+            }
+            
+            ViewData["ValidateMessage"] = "User not found"; 
             return View();
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Index(string username, string password)
-        {
-            // Authenticate the user based on the provided username and password
-            var user = await _nalogRepository.GetByUsernameAndPassword(username, password);
 
-            if (user == null)
-            {
-                // Invalid username or password
-                ViewBag.ErrorMessage = "Invalid username or password.";
-                return View();
-            }
-
-            // Store the user information in a session or cookie for future requests
-            HttpContext.Session.SetString("UserId", user.Id.ToString());
-            HttpContext.Session.SetString("Username", user.Username);
-
-            // Redirect to the appropriate controller based on the user role
-            if (user.Username == "admin")
-            {
-                return RedirectToAction("Index", "Home");
-            }
-            else
-            {
-                return RedirectToAction("Index", "Voznja");
-            }
-        }
     }
 }

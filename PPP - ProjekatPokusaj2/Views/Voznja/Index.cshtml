@@ -30,7 +30,6 @@
     }
 </style>
 <form>
-<button asp-action="CreateOrEdit" asp-controller="Voznja" class="btn btn-primary mb-3">Create Voznja</button> 
 <table class="table table-responsive table-bordered table-hover text-center">
     <thead>
         <tr class="table-active">
@@ -46,9 +45,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Id)
             </th>
-            <th colspan=2>
-                Opcije
-            </th>
+            
             
         </tr>
     </thead>
@@ -63,20 +60,9 @@
                     <td>@item.VremeVoznjeMin</td>
                     <td>@item.Id</td>
 
-                    <td class="text-center">
-                        <div class="kontejnercic">
-                        <div class="edit">
-                        <div class="btn-group btn-group-sm">
-                            <a asp-controller="Voznja" asp-action="CreateOrEdit" asp-route-id="@item.Id_voznje" class="btn btn-warning">Edit</a>
-                        </div>
-                        </div>
-                        <div class="delete">
-                        <div class="btn-group btn-group-sm delete">
-                            <a asp-controller="Voznja" asp-action="Delete" asp-route-id="@item.Id_voznje" class="btn btn-danger">Delete</a>
-                        </div>
-                        </div>
-                        </div>
-                    </td>
+                   
+                     
+                    
                      
 
                 </tr>
@@ -85,7 +71,7 @@
         else
         {
             <tr>
-                <td colspan="6">
+                <td colspan="4">
                     <div>
                         Nema Voznji Unesenih
                     </div>

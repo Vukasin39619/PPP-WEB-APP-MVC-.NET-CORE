@@ -4,9 +4,14 @@
     using PPP___ProjekatPokusaj2.Infrastructure.Interface;
     using PPP___ProjekatPokusaj2.Models;
     using System.Diagnostics;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 
-    namespace PPP___ProjekatPokusaj2.Controllers
+
+namespace PPP___ProjekatPokusaj2.Controllers
     {
+    [Authorize]
         public class HomeController : Controller
         {
             private readonly ILogger<HomeController> _logger;
@@ -91,12 +96,18 @@
                 return RedirectToAction("Index");
             }
         }
-
+        public async Task<IActionResult> LogOut()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Index","Login");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
             public IActionResult Error()
             {
                 return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
             }
+
+            
         }
     }
