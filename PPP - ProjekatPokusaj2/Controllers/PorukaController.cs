@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace PPP___ProjekatPokusaj2.Controllers
 {
+    
     public class PorukaController : Controller
     {
         private static List<string> Poruka = new List<string>();

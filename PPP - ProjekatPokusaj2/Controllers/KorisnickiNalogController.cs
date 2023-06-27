@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PPP___ProjekatPokusaj2.Core;
 using PPP___ProjekatPokusaj2.Infrastructure.Interface;
 
 namespace PPP___ProjekatPokusaj2.Controllers
 {
+    [Authorize]
     public class KorisnickiNalogController : Controller
     {
         private readonly IKorisnickiNalogRepository _nalogRepo;
