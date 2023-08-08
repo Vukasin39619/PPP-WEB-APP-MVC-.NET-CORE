@@ -8,9 +8,9 @@ namespace PPP___ProjekatPokusaj2.Controllers
     [Authorize]
     public class UliceController : Controller
     {
-        private readonly IUlicaRepository _ulicaRepo;
+        private readonly IRacunRepository _ulicaRepo;
 
-        public UliceController(IUlicaRepository ulicaRepo)
+        public UliceController(IRacunRepository ulicaRepo)
         {
             _ulicaRepo = ulicaRepo;
         }
@@ -25,13 +25,13 @@ namespace PPP___ProjekatPokusaj2.Controllers
         {
             if(id==0)
             {
-                return View(new UlicaBO());
+                return View(new RacunBO());
             }
             else
             {
                 try
                 {
-                    UlicaBO Ulica = await _ulicaRepo.GetById(id);
+                    RacunBO Ulica = await _ulicaRepo.GetById(id);
                     if (Ulica != null)
                     {
                         return View(Ulica);
@@ -50,7 +50,7 @@ namespace PPP___ProjekatPokusaj2.Controllers
             
         }
         [HttpPost]
-        public async Task<IActionResult> CreateOrEdit(UlicaBO model)
+        public async Task<IActionResult> CreateOrEdit(RacunBO model)
         {
             try
             {
@@ -92,7 +92,7 @@ namespace PPP___ProjekatPokusaj2.Controllers
         {
             try
             {
-                UlicaBO ulica = await _ulicaRepo.GetById(id);
+                RacunBO ulica = await _ulicaRepo.GetById(id);
                 if (ulica != null)
                 {
                     return View(ulica);
@@ -109,7 +109,7 @@ namespace PPP___ProjekatPokusaj2.Controllers
             return RedirectToAction("Index");
         }
         [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteConfirmed(UlicaBO model)
+        public async Task<IActionResult> DeleteConfirmed(RacunBO model)
         {
             try
             {

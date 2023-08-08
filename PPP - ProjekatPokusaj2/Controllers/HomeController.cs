@@ -15,20 +15,20 @@ namespace PPP___ProjekatPokusaj2.Controllers
         public class HomeController : Controller
         {
             private readonly ILogger<HomeController> _logger;
-            private readonly IKorisnickiNalogRepository _nalogRepo;
-            private readonly IUlicaRepository _ulicaRepo;
-            private readonly IVoznjaRepository _voznjaRepo;
+            private readonly IClanRepository clanRepository;
+            private readonly IRacunRepository racunRepository;
+            private readonly IKnjigaRepository knjigaRepository;
 
-        public HomeController(ILogger<HomeController> logger, IVoznjaRepository voznjaRepo, IKorisnickiNalogRepository nalogRepo, IUlicaRepository ulicaRepo)
+        public HomeController(ILogger<HomeController> logger, IKnjigaRepository knjigaRepository, IClanRepository clanRepository, IRacunRepository racunRepository)
             {
                 _logger = logger;
-                _nalogRepo = nalogRepo;
-                _ulicaRepo = ulicaRepo;
-            _voznjaRepo = voznjaRepo;
+            clanRepository = clanRepository;
+            racunRepository = racunRepository;
+            knjigaRepository = knjigaRepository;
             }
             public async Task<IActionResult> Index()
             {
-                var nalog = await _nalogRepo.GetAll();
+                var nalog = await clanRepository.GetAll();
                 return View(nalog);
             }
             [HttpGet]
@@ -36,17 +36,17 @@ namespace PPP___ProjekatPokusaj2.Controllers
             {
                 if (id == 0)
                 {
-                    return View(new KorisnickiNalogBO());
+                    return View(new KnjigaBO());
                 }
                 else
                 {
                     try
                     {
-                        KorisnickiNalogBO nalog = await _nalogRepo.GetById(id);
-                        if (nalog != null)
+                        ClanBO clan = await clanRepository.GetById(id);
+                        if (clan != null)
                         {
-                           ViewBag.UlicaData = await _ulicaRepo.GetAll(); // Populate the ViewBag.UlicaData with street data
-                            return View(nalog); 
+                           ViewBag.UlicaData = await racunRepository.GetAll(); // Populate the ViewBag.UlicaData with street data
+                            return View(clan); 
                         }
                     }
                     catch (Exception ex)
@@ -65,14 +65,14 @@ namespace PPP___ProjekatPokusaj2.Controllers
                 return View();
             }
         [HttpPost]
-        public async Task<IActionResult> Start(KorisnickiNalogBO nalog, int selectedUlicaId)
+        public async Task<IActionResult> Start(KnjigaBO nalog, int selectedUlicaId)
         {
             try
             {
                 // Access the selected street ID using the "selectedUlicaId" parameter
 
                 // Create a new Voznja object
-                var voznja = new VoznjaBO
+                var knjiga = new ClanBO
                 {
                     Id = nalog.Id,
                     // Assign the selected street ID

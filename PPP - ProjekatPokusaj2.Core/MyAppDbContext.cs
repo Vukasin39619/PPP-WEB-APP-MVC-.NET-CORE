@@ -13,16 +13,16 @@ namespace PPP___ProjekatPokusaj2.Core
         public MyAppDbContext(DbContextOptions options) : base(options)
         {
         }
-        public DbSet<VoznjaBO>Voznja { get; set; }
-        public DbSet<UlicaBO> Ulica { get; set; }
-        public DbSet<KorisnickiNalogBO> KorisnickiNalog { get; set; }
+        public DbSet<ClanBO>Clan { get; set; }
+        public DbSet<RacunBO> Racun { get; set; }
+        public DbSet<KnjigaBO> Knjiga { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Entity configurations and relationships can be defined here
-            modelBuilder.Entity<VoznjaBO>().HasKey(v => v.Id_voznje);
-            modelBuilder.Entity<UlicaBO>().HasKey(c => c.Id_ulice);
-            modelBuilder.Entity<KorisnickiNalogBO>().HasKey(s => s.Id);
+            modelBuilder.Entity<ClanBO>().HasKey(v => v.Id_Clana);
+            modelBuilder.Entity<RacunBO>().HasKey(c => c.Id_Knjige);
+            modelBuilder.Entity<KnjigaBO>().HasKey(s => s.Id_Knjige);
             // Other entity configurations...
         }
     }

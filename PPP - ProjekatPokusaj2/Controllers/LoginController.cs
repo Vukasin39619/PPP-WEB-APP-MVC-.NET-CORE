@@ -10,9 +10,9 @@ namespace PPP___ProjekatPokusaj2.Controllers
 {
     public class LoginController : Controller
     {
-        private readonly IKorisnickiNalogRepository _nalogRepository;
+        private readonly IKnjigaRepository _nalogRepository;
         
-        public LoginController(IKorisnickiNalogRepository nalogRepository)
+        public LoginController(IKnjigaRepository nalogRepository)
         {
             _nalogRepository = nalogRepository;
         }
@@ -52,7 +52,7 @@ namespace PPP___ProjekatPokusaj2.Controllers
                 return RedirectToAction("Index", "Home");
 
             }
-            foreach(KorisnickiNalogBO nalozi in nalog)
+            foreach(KnjigaBO nalozi in nalog)
             {
                 if(modelLogin.Username==nalozi.Username && modelLogin.Password==nalozi.Sifra)
                 {

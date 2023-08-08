@@ -24,9 +24,9 @@ builder.Services.AddSession(); // Add this line for session management
 builder.Services.AddDbContext<MyAppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddScoped<IUlicaRepository, UlicaRepository>();
-builder.Services.AddScoped<IVoznjaRepository, VoznjaRepository>();
-builder.Services.AddScoped<IKorisnickiNalogRepository, KorisnickiNalogRepository>();
+builder.Services.AddScoped<IRacunRepository, RacunRepository>();
+builder.Services.AddScoped<IKnjigaRepository, KnjigaRepository>();
+builder.Services.AddScoped<IKnjigaRepository, ClanRepository>();
 
 var app = builder.Build();
 

@@ -8,9 +8,9 @@ namespace PPP___ProjekatPokusaj2.Controllers
     [Authorize]
     public class KorisnickiNalogController : Controller
     {
-        private readonly IKorisnickiNalogRepository _nalogRepo;
+        private readonly IKnjigaRepository _nalogRepo;
 
-        public KorisnickiNalogController(IKorisnickiNalogRepository nalogRepo)
+        public KorisnickiNalogController(IKnjigaRepository nalogRepo)
         {
             _nalogRepo = nalogRepo;
         }
@@ -25,13 +25,13 @@ namespace PPP___ProjekatPokusaj2.Controllers
         {
             if (id == 0)
             {
-                return View(new KorisnickiNalogBO());
+                return View(new KnjigaBO());
             }
             else
             {
                 try
                 {
-                    KorisnickiNalogBO nalog = await _nalogRepo.GetById(id);
+                    KnjigaBO nalog = await _nalogRepo.GetById(id);
                     if (nalog != null)
                     {
                         return View(nalog);
@@ -50,7 +50,7 @@ namespace PPP___ProjekatPokusaj2.Controllers
 
         }
         [HttpPost]
-        public async Task<IActionResult> CreateOrEdit(KorisnickiNalogBO model)
+        public async Task<IActionResult> CreateOrEdit(KnjigaBO model)
         {
             try
             {
@@ -92,7 +92,7 @@ namespace PPP___ProjekatPokusaj2.Controllers
         {
             try
             {
-                KorisnickiNalogBO nalog = await _nalogRepo.GetById(id);
+                KnjigaBO nalog = await _nalogRepo.GetById(id);
                 if (nalog != null)
                 {
                     return View(nalog);
@@ -109,7 +109,7 @@ namespace PPP___ProjekatPokusaj2.Controllers
             return RedirectToAction("Index");
         }
         [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteConfirmed(KorisnickiNalogBO model)
+        public async Task<IActionResult> DeleteConfirmed(KnjigaBO model)
         {
             try
             {

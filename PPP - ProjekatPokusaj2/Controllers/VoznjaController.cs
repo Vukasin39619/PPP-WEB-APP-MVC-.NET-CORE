@@ -8,9 +8,9 @@ namespace PPP___ProjekatPokusaj2.Controllers
     
     public class VoznjaController : Controller
     {
-        private readonly IVoznjaRepository _voznjaRepo;
+        private readonly IKnjigaRepository _voznjaRepo;
 
-        public VoznjaController(IVoznjaRepository voznjaRepo)
+        public VoznjaController(IKnjigaRepository voznjaRepo)
         {
             _voznjaRepo = voznjaRepo;
         }
@@ -26,13 +26,13 @@ namespace PPP___ProjekatPokusaj2.Controllers
         {
             if (id == 0)
             {
-                return View(new VoznjaBO());
+                return View(new ClanBO());
             }
             else
             {
                 try
                 {
-                    VoznjaBO voznja = await _voznjaRepo.GetById(id);
+                    ClanBO voznja = await _voznjaRepo.GetById(id);
                     if (voznja != null)
                     {
                         return View(voznja);
@@ -51,7 +51,7 @@ namespace PPP___ProjekatPokusaj2.Controllers
 
         }
         [HttpPost]
-        public async Task<IActionResult> CreateOrEdit(VoznjaBO model)
+        public async Task<IActionResult> CreateOrEdit(ClanBO model)
         {
             try
             {
@@ -93,7 +93,7 @@ namespace PPP___ProjekatPokusaj2.Controllers
         {
             try
             {
-                VoznjaBO voznja = await _voznjaRepo.GetById(id);
+                ClanBO voznja = await _voznjaRepo.GetById(id);
                 if (voznja != null)
                 {
                     return View(voznja);
@@ -110,7 +110,7 @@ namespace PPP___ProjekatPokusaj2.Controllers
             return RedirectToAction("Index");
         }
         [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteConfirmed(VoznjaBO model)
+        public async Task<IActionResult> DeleteConfirmed(ClanBO model)
         {
             try
             {
