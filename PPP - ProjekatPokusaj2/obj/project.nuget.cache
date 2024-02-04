@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fL22ahLsf1tG4h6pvv2d8/autYoKlzLdr+BsH/0jlne6anItEIDo23U2z+3d0hhDurSrT0c0ywYB8K0Y/WvIxw==",
+  "dgSpecHash": "PTltpceZnuD/Xb0neCuh6bcfZzSCiATeJQZXu44qU8jZJQX4ts2XQu940Brw36w5uHRZuB3KtMbEvc2H2NigEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2-UI.csproj",
+  "projectFilePath": "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2-UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vukisha\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Vukisha\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -41,8 +41,8 @@ namespace PPP___ProjekatPokusaj2.Infrastructure.Implementations
         }
         public async Task<IEnumerable<KorisnickiNalogBO>> GetAll()
         {
-            var nalog = await _context.KorisnickiNalog.ToListAsync();
-            return nalog;
+            var nalog =  _context.KorisnickiNalog.ToListAsync();
+            return await nalog;
         }
       
 

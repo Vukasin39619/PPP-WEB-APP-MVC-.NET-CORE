@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2-UI.csproj": {}
+    "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2-UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2.Core\\PPP - ProjekatPokusaj2.Core.csproj": {
+    "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2.Core\\PPP - ProjekatPokusaj2.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2.Core\\PPP - ProjekatPokusaj2.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2.Core\\PPP - ProjekatPokusaj2.Core.csproj",
         "projectName": "PPP - ProjekatPokusaj2.Core",
-        "projectPath": "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2.Core\\PPP - ProjekatPokusaj2.Core.csproj",
+        "projectPath": "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2.Core\\PPP - ProjekatPokusaj2.Core.csproj",
         "packagesPath": "C:\\Users\\Vukisha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2.Core\\obj\\",
+        "outputPath": "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,7 +59,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,18 +69,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.313\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2.Infrastructure\\PPP - ProjekatPokusaj2.Infrastructure.csproj": {
+    "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2.Infrastructure\\PPP - ProjekatPokusaj2.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2.Infrastructure\\PPP - ProjekatPokusaj2.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2.Infrastructure\\PPP - ProjekatPokusaj2.Infrastructure.csproj",
         "projectName": "PPP - ProjekatPokusaj2.Infrastructure",
-        "projectPath": "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2.Infrastructure\\PPP - ProjekatPokusaj2.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2.Infrastructure\\PPP - ProjekatPokusaj2.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Vukisha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -100,8 +101,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2.Core\\PPP - ProjekatPokusaj2.Core.csproj": {
-                "projectPath": "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2.Core\\PPP - ProjekatPokusaj2.Core.csproj"
+              "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2.Core\\PPP - ProjekatPokusaj2.Core.csproj": {
+                "projectPath": "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2.Core\\PPP - ProjekatPokusaj2.Core.csproj"
               }
             }
           }
@@ -127,7 +128,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -136,18 +138,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.313\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2-UI.csproj": {
+    "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2-UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2-UI.csproj",
+        "projectUniqueName": "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2-UI.csproj",
         "projectName": "PPP - ProjekatPokusaj2-UI",
-        "projectPath": "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2-UI.csproj",
+        "projectPath": "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2-UI.csproj",
         "packagesPath": "C:\\Users\\Vukisha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2\\obj\\",
+        "outputPath": "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -168,8 +170,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2.Infrastructure\\PPP - ProjekatPokusaj2.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Vukisha\\source\\repos\\PPP - ProjekatPokusaj2\\PPP - ProjekatPokusaj2.Infrastructure\\PPP - ProjekatPokusaj2.Infrastructure.csproj"
+              "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2.Infrastructure\\PPP - ProjekatPokusaj2.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Vukisha\\source\\repos\\PPP-WEB-APP-MVC-.NET-CORE\\PPP - ProjekatPokusaj2.Infrastructure\\PPP - ProjekatPokusaj2.Infrastructure.csproj"
               }
             }
           }
@@ -199,7 +201,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -211,7 +214,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.313\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

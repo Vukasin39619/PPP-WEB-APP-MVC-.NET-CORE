@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace PPP___ProjekatPokusaj2.Controllers
     {
-    [Authorize]
+    
         public class HomeController : Controller
         {
             private readonly ILogger<HomeController> _logger;

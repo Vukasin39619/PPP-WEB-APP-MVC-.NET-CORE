@@ -30,7 +30,7 @@ namespace PPP___ProjekatPokusaj2.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(Login modelLogin)
         {
-            var nalog = await _nalogRepository.GetAll();
+            var nalog =  _nalogRepository.GetAll();
             if (modelLogin.Username == "Admin" && modelLogin.Password == "Admin")
             {
                 List<Claim> claims = new List<Claim>()
@@ -52,7 +52,7 @@ namespace PPP___ProjekatPokusaj2.Controllers
                 return RedirectToAction("Index", "Home");
 
             }
-            foreach(KorisnickiNalogBO nalozi in nalog)
+            foreach(KorisnickiNalogBO nalozi in await nalog)
             {
                 if(modelLogin.Username==nalozi.Username && modelLogin.Password==nalozi.Sifra)
                 {

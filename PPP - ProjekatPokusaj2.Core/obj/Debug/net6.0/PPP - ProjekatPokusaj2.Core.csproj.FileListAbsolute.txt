@@ -10,3 +10,15 @@ C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2.Core
 C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2.Core\obj\Debug\net6.0\refint\PPP - ProjekatPokusaj2.Core.dll
 C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2.Core\obj\Debug\net6.0\PPP - ProjekatPokusaj2.Core.pdb
 C:\Users\Vukisha\source\repos\PPP - ProjekatPokusaj2\PPP - ProjekatPokusaj2.Core\obj\Debug\net6.0\ref\PPP - ProjekatPokusaj2.Core.dll
+C:\Users\Vukisha\source\repos\PPP-WEB-APP-MVC-.NET-CORE\PPP - ProjekatPokusaj2.Core\obj\Debug\net6.0\PPP - ProjekatPokusaj2.Core.dll
+C:\Users\Vukisha\source\repos\PPP-WEB-APP-MVC-.NET-CORE\PPP - ProjekatPokusaj2.Core\obj\Debug\net6.0\refint\PPP - ProjekatPokusaj2.Core.dll
+C:\Users\Vukisha\source\repos\PPP-WEB-APP-MVC-.NET-CORE\PPP - ProjekatPokusaj2.Core\obj\Debug\net6.0\PPP - ProjekatPokusaj2.Core.pdb
+C:\Users\Vukisha\source\repos\PPP-WEB-APP-MVC-.NET-CORE\PPP - ProjekatPokusaj2.Core\bin\Debug\net6.0\PPP - ProjekatPokusaj2.Core.deps.json
+C:\Users\Vukisha\source\repos\PPP-WEB-APP-MVC-.NET-CORE\PPP - ProjekatPokusaj2.Core\bin\Debug\net6.0\PPP - ProjekatPokusaj2.Core.dll
+C:\Users\Vukisha\source\repos\PPP-WEB-APP-MVC-.NET-CORE\PPP - ProjekatPokusaj2.Core\bin\Debug\net6.0\PPP - ProjekatPokusaj2.Core.pdb
+C:\Users\Vukisha\source\repos\PPP-WEB-APP-MVC-.NET-CORE\PPP - ProjekatPokusaj2.Core\obj\Debug\net6.0\PPP - ProjekatPokusaj2.Core.csproj.AssemblyReference.cache
+C:\Users\Vukisha\source\repos\PPP-WEB-APP-MVC-.NET-CORE\PPP - ProjekatPokusaj2.Core\obj\Debug\net6.0\PPP - ProjekatPokusaj2.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vukisha\source\repos\PPP-WEB-APP-MVC-.NET-CORE\PPP - ProjekatPokusaj2.Core\obj\Debug\net6.0\PPP - ProjekatPokusaj2.Core.AssemblyInfoInputs.cache
+C:\Users\Vukisha\source\repos\PPP-WEB-APP-MVC-.NET-CORE\PPP - ProjekatPokusaj2.Core\obj\Debug\net6.0\PPP - ProjekatPokusaj2.Core.AssemblyInfo.cs
+C:\Users\Vukisha\source\repos\PPP-WEB-APP-MVC-.NET-CORE\PPP - ProjekatPokusaj2.Core\obj\Debug\net6.0\PPP - ProjekatPokusaj2.Core.csproj.CoreCompileInputs.cache
+C:\Users\Vukisha\source\repos\PPP-WEB-APP-MVC-.NET-CORE\PPP - ProjekatPokusaj2.Core\obj\Debug\net6.0\ref\PPP - ProjekatPokusaj2.Core.dll
